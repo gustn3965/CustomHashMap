@@ -8,7 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		DB839A23265F9A2100E736DD /* CustomHashMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB839A22265F9A2100E736DD /* CustomHashMap.swift */; };
+		DB839A30265F9A3500E736DD /* HashTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB839A2F265F9A3500E736DD /* HashTest.swift */; };
+		DB839A32265F9A3500E736DD /* libCustomHashMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DB839A1F265F9A2100E736DD /* libCustomHashMap.a */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB839A33265F9A3500E736DD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB839A17265F9A2100E736DD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB839A1E265F9A2100E736DD;
+			remoteInfo = CustomHashMap;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		DB839A1D265F9A2100E736DD /* CopyFiles */ = {
@@ -25,6 +37,9 @@
 /* Begin PBXFileReference section */
 		DB839A1F265F9A2100E736DD /* libCustomHashMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libCustomHashMap.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB839A22265F9A2100E736DD /* CustomHashMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHashMap.swift; sourceTree = "<group>"; };
+		DB839A2D265F9A3500E736DD /* HashTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HashTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB839A2F265F9A3500E736DD /* HashTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HashTest.swift; sourceTree = "<group>"; };
+		DB839A31265F9A3500E736DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +50,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB839A2A265F9A3500E736DD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB839A32265F9A3500E736DD /* libCustomHashMap.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,6 +65,7 @@
 			isa = PBXGroup;
 			children = (
 				DB839A21265F9A2100E736DD /* CustomHashMap */,
+				DB839A2E265F9A3500E736DD /* HashTest */,
 				DB839A20265F9A2100E736DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +74,7 @@
 			isa = PBXGroup;
 			children = (
 				DB839A1F265F9A2100E736DD /* libCustomHashMap.a */,
+				DB839A2D265F9A3500E736DD /* HashTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,6 +85,15 @@
 				DB839A22265F9A2100E736DD /* CustomHashMap.swift */,
 			);
 			path = CustomHashMap;
+			sourceTree = "<group>";
+		};
+		DB839A2E265F9A3500E736DD /* HashTest */ = {
+			isa = PBXGroup;
+			children = (
+				DB839A2F265F9A3500E736DD /* HashTest.swift */,
+				DB839A31265F9A3500E736DD /* Info.plist */,
+			);
+			path = HashTest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +116,24 @@
 			productReference = DB839A1F265F9A2100E736DD /* libCustomHashMap.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		DB839A2C265F9A3500E736DD /* HashTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB839A35265F9A3500E736DD /* Build configuration list for PBXNativeTarget "HashTest" */;
+			buildPhases = (
+				DB839A29265F9A3500E736DD /* Sources */,
+				DB839A2A265F9A3500E736DD /* Frameworks */,
+				DB839A2B265F9A3500E736DD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB839A34265F9A3500E736DD /* PBXTargetDependency */,
+			);
+			name = HashTest;
+			productName = HashTest;
+			productReference = DB839A2D265F9A3500E736DD /* HashTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -92,6 +144,9 @@
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
 					DB839A1E265F9A2100E736DD = {
+						CreatedOnToolsVersion = 12.5;
+					};
+					DB839A2C265F9A3500E736DD = {
 						CreatedOnToolsVersion = 12.5;
 					};
 				};
@@ -110,9 +165,20 @@
 			projectRoot = "";
 			targets = (
 				DB839A1E265F9A2100E736DD /* CustomHashMap */,
+				DB839A2C265F9A3500E736DD /* HashTest */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB839A2B265F9A3500E736DD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB839A1B265F9A2100E736DD /* Sources */ = {
@@ -123,7 +189,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		DB839A29265F9A3500E736DD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB839A30265F9A3500E736DD /* HashTest.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB839A34265F9A3500E736DD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB839A1E265F9A2100E736DD /* CustomHashMap */;
+			targetProxy = DB839A33265F9A3500E736DD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		DB839A24265F9A2100E736DD /* Debug */ = {
@@ -268,6 +350,42 @@
 			};
 			name = Release;
 		};
+		DB839A36265F9A3500E736DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVLV77R6X7;
+				INFOPLIST_FILE = HashTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunsu.park.HashTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB839A37265F9A3500E736DD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = WVLV77R6X7;
+				INFOPLIST_FILE = HashTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyunsu.park.HashTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -285,6 +403,15 @@
 			buildConfigurations = (
 				DB839A27265F9A2100E736DD /* Debug */,
 				DB839A28265F9A2100E736DD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB839A35265F9A3500E736DD /* Build configuration list for PBXNativeTarget "HashTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB839A36265F9A3500E736DD /* Debug */,
+				DB839A37265F9A3500E736DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
