@@ -60,17 +60,6 @@ class HashTest: XCTestCase {
         dict[6] = 6
         XCTAssertTrue(dict.capacity == size*2)
     }
-    func test_10개사이즈로_삽입3번_삭제3번했다면_resizing되어_capacity가_2배되어야한다() {
-        let size = 10
-        var dict = CustomHashMap<Int>(size)
-        dict[1] = 1
-        dict[2] = 2
-        dict[3] = 3
-        dict[1] = nil
-        dict[2] = nil
-        dict[3] = nil
-        XCTAssertTrue(dict.capacity == size*2)
-    }
 
     func test_10개사이즈로_삽입21번한다면_resizing2번되어_capacity가_80이되어야한다() {
         let size = 10

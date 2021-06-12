@@ -78,9 +78,6 @@ struct CustomHashMap<Value> {
         storage[hashedKey]?.key = nil
         usage -= 1
         totalUsage += 1 
-        if totalUsage > capacity/2 {
-            resize()
-        }
     }
     
     mutating func update(_ hashedKey: Int, _ value: Value ) {
